@@ -1,0 +1,15 @@
+.gradle/
+**/build/
+.idea/
+*.iml
+local.properties
+.env
+.DS_Store
+
+# Android Studio / Gradle generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Room schema output (enabled when database entities are added)
+android/app/schemas/

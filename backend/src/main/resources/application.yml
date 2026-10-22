@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: notbad-backend
+  datasource:
+    url: "${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/notbad?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC}"
+    username: "${SPRING_DATASOURCE_USERNAME:notbad}"
+    password: "${SPRING_DATASOURCE_PASSWORD:notbad_local}"
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+server:
+  port: ${PORT:8080}
